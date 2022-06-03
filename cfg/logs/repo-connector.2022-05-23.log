@@ -1,0 +1,1085 @@
+2022-05-23 21:59:41,623 INFO {RepoConnector.java:87} [--] Repo connector version is 1.7.10
+2022-05-23 21:59:41,629 INFO {RepoConnector.java:89} [--] Configuration is cfg
+2022-05-23 21:59:43,919 INFO {RepositoryFactoryImpl.java:55} [--] Repository factory configuration are reading...
+2022-05-23 21:59:43,919 INFO {RepositoryFactoryImpl.java:61} [--] Repository factory configuration are read successfully. There are 6 specific connectors
+2022-05-23 21:59:43,931 INFO {ConfigRepositoryDataProviderImpl.java:86} [--] Repository configurations are reading...
+2022-05-23 21:59:43,958 INFO {ConfigRepositoryDataProviderImpl.java:127} [--] Repository RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>] are added, alias github_ashok_test, project f08ee008d, auth type USER_PASSWORD
+2022-05-23 21:59:43,964 INFO {ConfigRepositoryDataProviderImpl.java:129} [--] Repository configurations are read successfully. There are 1 repositories
+2022-05-23 21:59:44,784 INFO {QueueImportDataListener.java:49} [--] Importer com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl@18989e0 is assigned to handle TranslationImportRequest data
+2022-05-23 21:59:44,784 INFO {QueueImportDataListener.java:49} [--] Importer com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl@2493eec6 is assigned to handle PushImportRequest data
+2022-05-23 21:59:44,785 INFO {QueueImportDataListener.java:49} [--] Importer com.smartling.repoconnector.services.scheduler.RepositoryPollingImporterImpl@7742a276 is assigned to handle PollImportRequest data
+2022-05-23 21:59:44,886 INFO {BrokerManager.java:128} [--] Repository Connector is starting
+2022-05-23 21:59:44,886 INFO {ActiveMQProvider.java:45} [--] Queue is started
+2022-05-23 21:59:45,392 INFO {HTTPSJerseyListener.java:68} [--] HTTP listener is started on http://0.0.0.0:5555
+2022-05-23 21:59:45,405 INFO {BrokerManager.java:134} [--] Metrics reposter is started. Output dir: cfg/metrics
+2022-05-23 21:59:45,405 INFO {BrokerManager.java:136} [--] Repository Connector successfully started
+2022-05-23 21:59:45,405 INFO {RepoConnector.java:213} [--] Repository Connector is starting
+2022-05-23 21:59:45,406 INFO {RepoConnector.java:214} [--] Checking health...
+2022-05-23 21:59:45,406 INFO {RepoConnector.java:311} [--] ActiveMQProvider is OK, parameters {handledConnections=0, connections=0, uptime=1.293 seconds}
+2022-05-23 21:59:45,407 INFO {RepoConnector.java:311} [--] HTTPSJerseyListener is OK
+2022-05-23 21:59:46,749 INFO {GitRepositoryConnector.java:442} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-] Repository is accessible
+2022-05-23 21:59:46,750 INFO {RepoConnector.java:311} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-] Repository RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>] is OK
+2022-05-23 21:59:46,750 INFO {RepoConnector.java:223} [--] The health is OK
+2022-05-23 21:59:46,753 INFO {RepositoryFactoryImpl.java:177} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-VCS2SMARTLING] Pooling task is scheduled with cron expression 0 */1 * * * ?
+2022-05-23 21:59:46,754 INFO {RepoConnector.java:225} [--] Periodical tasks are scheduled
+2022-05-23 22:00:00,005 INFO {TranslationStatusChecker.java:82} [--] Check translations task is starting...
+2022-05-23 22:00:00,214 INFO {TranslationStatusChecker.java:146} [--] Scheduler creates an import request for []
+2022-05-23 22:00:00,214 INFO {TranslationStatusChecker.java:94} [--] Check translations task is completed
+2022-05-23 22:00:02,020 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event PollImportRequest has received from queue
+2022-05-23 22:00:02,039 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Importer com.smartling.repoconnector.services.scheduler.RepositoryPollingImporterImpl@7742a276 is used to handle the event
+2022-05-23 22:00:02,040 INFO {RepositoryPollingImporterImpl.java:47} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is starting...
+2022-05-23 22:00:04,278 INFO {GitRepositoryConnector.java:536} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Repository is cloned, localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 22:00:04,289 INFO {RepositoryPollingImporterImpl.java:73} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Scheduler creates an import request for main branch and 48ca90d6043647476eb732ea13bc37efb3ae6976 revision
+2022-05-23 22:00:04,314 INFO {RepositoryPollingImporterImpl.java:87} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is finished
+2022-05-23 22:00:04,314 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 22:00:06,005 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Import event PushImportRequest has received from queue
+2022-05-23 22:00:06,005 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Importer com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl@2493eec6 is used to handle the event
+2022-05-23 22:00:06,024 INFO {Vcs2SmartlingImporterImpl.java:51} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Push (files to Smartling) event handling starting...
+2022-05-23 22:00:06,046 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 22:00:06,047 INFO {Vcs2SmartlingImporterImpl.java:96} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Starting processing revisions from null to 48ca90d6043647476eb732ea13bc37efb3ae6976
+2022-05-23 22:00:06,152 INFO {Vcs2SmartlingImporterImpl.java:98} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Repository is updated to head
+2022-05-23 22:00:06,153 INFO {Vcs2SmartlingImporterImpl.java:116} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Repository resources configuration file smartling-config.json
+2022-05-23 22:00:06,158 INFO {ResourcesConfigurationImpl.java:121} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Resources configuration read from cfg/repository-data/GIT_github_com_ashokvijayendra_public_git/smartling-config.json, there are 1 sets
+2022-05-23 22:00:06,161 INFO {Vcs2SmartlingImporterImpl.java:121} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Repository resources configuration file smartling-config.json is changed from previous state
+2022-05-23 22:00:06,162 INFO {Vcs2SmartlingImporterImpl.java:188} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] There are 9 changes detected in repository
+2022-05-23 22:00:06,163 INFO {Vcs2SmartlingImporterImpl.java:191} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] There are 9 preprocessed resources must be uploaded to smartling
+2022-05-23 22:00:06,166 INFO {Vcs2SmartlingImporterImpl.java:193} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] There are 2 resources must be uploaded to smartling
+2022-05-23 22:00:06,192 INFO {SmartlingApiFacadeImpl.java:271} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Resource /github_ashok_test/main/gittest.properties, type JAVA_PROPERTIES, authorized true, callback null is uploading to smartling...
+2022-05-23 22:00:06,476 INFO {RetryLogger.java:31} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Retryable method FilesApiClient.uploadFile threw a 1st exception: http_status=400, requestId=98b8284a-e3bc-409d-a19a-fab24fcb5232, top errors: 'Invalid locale: fr-FR'
+2022-05-23 22:00:06,479 ERROR {Vcs2SmartlingImporterImpl.java:205} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Uploading resource to Smartling failed: requestId=98b8284a-e3bc-409d-a19a-fab24fcb5232, status=400, changeType='ADD', resourceType='JAVA_PROPERTIES', path='gittest.properties', previousPath='null' : "Invalid locale: fr-FR"
+com.smartling.repoconnector.services.exception.UnrecoverableSmartlingRestApiException: Can't upload with with fileUri=/github_ashok_test/main/gittest.properties
+	at com.smartling.repoconnector.services.integration.FilesApiClient.wrap(FilesApiClient.java:120)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.lambda$uploadFile$15(FilesApiClient.java:112)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.execute(FilesApiClient.java:141)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.uploadFile(FilesApiClient.java:109)
+	at com.smartling.repoconnector.services.integration.uploader.SmartlingApiFacadeImpl.uploadFile(SmartlingApiFacadeImpl.java:288)
+	at com.smartling.repoconnector.services.integration.uploader.SmartlingApiFacadeImpl.upload(SmartlingApiFacadeImpl.java:105)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.uploadResources(Vcs2SmartlingImporterImpl.java:199)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.processRevisions(Vcs2SmartlingImporterImpl.java:156)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.getResultUsingRepositoryConfig(Vcs2SmartlingImporterImpl.java:124)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.processNewRevision(Vcs2SmartlingImporterImpl.java:108)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.handlePushEvent(Vcs2SmartlingImporterImpl.java:76)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.importData(Vcs2SmartlingImporterImpl.java:58)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.importData(Vcs2SmartlingImporterImpl.java:37)
+	at com.smartling.repoconnector.services.queue.QueueImportDataListener.onMessage(QueueImportDataListener.java:70)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1189)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1179)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1076)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.smartling.api.v2.client.exception.client.ValidationErrorException: http_status=400, requestId=98b8284a-e3bc-409d-a19a-fab24fcb5232, top errors: 'Invalid locale: fr-FR'
+	at com.smartling.api.v2.client.exception.DefaultRestApiExceptionMapper.toExceptionByStatus(DefaultRestApiExceptionMapper.java:89)
+	at com.smartling.api.v2.client.exception.DefaultRestApiExceptionMapper.toException(DefaultRestApiExceptionMapper.java:44)
+	at com.smartling.api.files.v2.exceptions.FilesApiExceptionMapper.toException(FilesApiExceptionMapper.java:44)
+	at com.smartling.api.v2.client.exception.RestApiExceptionHandler.createRestApiException(RestApiExceptionHandler.java:31)
+	at com.smartling.api.v2.client.ExceptionDecoratorInvocationHandler.invoke(ExceptionDecoratorInvocationHandler.java:34)
+	at jdk.proxy2/jdk.proxy2.$Proxy113.uploadFile(Unknown Source)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.lambda$uploadFile$14(FilesApiClient.java:111)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.lambda$execute$16(FilesApiClient.java:135)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:329)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:209)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.execute(FilesApiClient.java:132)
+	... 20 common frames omitted
+Caused by: javax.ws.rs.BadRequestException: HTTP 400 Bad Request
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.handleErrorStatus(ClientInvocation.java:220)
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.extractResult(ClientInvocation.java:196)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.extractors.BodyEntityExtractor.extractEntity(BodyEntityExtractor.java:62)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invokeSync(ClientInvoker.java:151)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invoke(ClientInvoker.java:112)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientProxy.invoke(ClientProxy.java:76)
+	at jdk.proxy2/jdk.proxy2.$Proxy112.uploadFile(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at com.smartling.api.v2.client.ExceptionDecoratorInvocationHandler.invoke(ExceptionDecoratorInvocationHandler.java:30)
+	... 26 common frames omitted
+2022-05-23 22:00:06,494 INFO {SmartlingApiFacadeImpl.java:271} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Resource /github_ashok_test/main/translated/gittest_fr-FR.properties, type JAVA_PROPERTIES, authorized true, callback null is uploading to smartling...
+2022-05-23 22:00:06,845 INFO {RetryLogger.java:31} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Retryable method FilesApiClient.uploadFile threw a 1st exception: http_status=400, requestId=28fc8d12-4995-452b-8a6c-13094be400cf, top errors: 'Invalid locale: fr-FR'
+2022-05-23 22:00:06,846 ERROR {Vcs2SmartlingImporterImpl.java:205} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Uploading resource to Smartling failed: requestId=28fc8d12-4995-452b-8a6c-13094be400cf, status=400, changeType='ADD', resourceType='JAVA_PROPERTIES', path='translated/gittest_fr-FR.properties', previousPath='null' : "Invalid locale: fr-FR"
+com.smartling.repoconnector.services.exception.UnrecoverableSmartlingRestApiException: Can't upload with with fileUri=/github_ashok_test/main/translated/gittest_fr-FR.properties
+	at com.smartling.repoconnector.services.integration.FilesApiClient.wrap(FilesApiClient.java:120)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.lambda$uploadFile$15(FilesApiClient.java:112)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.execute(FilesApiClient.java:141)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.uploadFile(FilesApiClient.java:109)
+	at com.smartling.repoconnector.services.integration.uploader.SmartlingApiFacadeImpl.uploadFile(SmartlingApiFacadeImpl.java:288)
+	at com.smartling.repoconnector.services.integration.uploader.SmartlingApiFacadeImpl.upload(SmartlingApiFacadeImpl.java:105)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.uploadResources(Vcs2SmartlingImporterImpl.java:199)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.processRevisions(Vcs2SmartlingImporterImpl.java:156)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.getResultUsingRepositoryConfig(Vcs2SmartlingImporterImpl.java:124)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.processNewRevision(Vcs2SmartlingImporterImpl.java:108)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.handlePushEvent(Vcs2SmartlingImporterImpl.java:76)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.importData(Vcs2SmartlingImporterImpl.java:58)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.importData(Vcs2SmartlingImporterImpl.java:37)
+	at com.smartling.repoconnector.services.queue.QueueImportDataListener.onMessage(QueueImportDataListener.java:70)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1189)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1179)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1076)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.smartling.api.v2.client.exception.client.ValidationErrorException: http_status=400, requestId=28fc8d12-4995-452b-8a6c-13094be400cf, top errors: 'Invalid locale: fr-FR'
+	at com.smartling.api.v2.client.exception.DefaultRestApiExceptionMapper.toExceptionByStatus(DefaultRestApiExceptionMapper.java:89)
+	at com.smartling.api.v2.client.exception.DefaultRestApiExceptionMapper.toException(DefaultRestApiExceptionMapper.java:44)
+	at com.smartling.api.files.v2.exceptions.FilesApiExceptionMapper.toException(FilesApiExceptionMapper.java:44)
+	at com.smartling.api.v2.client.exception.RestApiExceptionHandler.createRestApiException(RestApiExceptionHandler.java:31)
+	at com.smartling.api.v2.client.ExceptionDecoratorInvocationHandler.invoke(ExceptionDecoratorInvocationHandler.java:34)
+	at jdk.proxy2/jdk.proxy2.$Proxy113.uploadFile(Unknown Source)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.lambda$uploadFile$14(FilesApiClient.java:111)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.lambda$execute$16(FilesApiClient.java:135)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:329)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:209)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.execute(FilesApiClient.java:132)
+	... 20 common frames omitted
+Caused by: javax.ws.rs.BadRequestException: HTTP 400 Bad Request
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.handleErrorStatus(ClientInvocation.java:220)
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.extractResult(ClientInvocation.java:196)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.extractors.BodyEntityExtractor.extractEntity(BodyEntityExtractor.java:62)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invokeSync(ClientInvoker.java:151)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invoke(ClientInvoker.java:112)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientProxy.invoke(ClientProxy.java:76)
+	at jdk.proxy2/jdk.proxy2.$Proxy112.uploadFile(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at com.smartling.api.v2.client.ExceptionDecoratorInvocationHandler.invoke(ExceptionDecoratorInvocationHandler.java:30)
+	... 26 common frames omitted
+2022-05-23 22:00:06,870 INFO {Vcs2SmartlingImporterImpl.java:171} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Revisions from null to 48ca90d6043647476eb732ea13bc37efb3ae6976 was processed successfully
+2022-05-23 22:00:06,871 INFO {Vcs2SmartlingImporterImpl.java:85} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Push event handling is finished successfully
+2022-05-23 22:00:06,872 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 22:03:00,001 INFO {TranslationStatusChecker.java:82} [--] Check translations task is starting...
+2022-05-23 22:03:00,023 INFO {TranslationStatusChecker.java:146} [--] Scheduler creates an import request for []
+2022-05-23 22:03:00,023 INFO {TranslationStatusChecker.java:94} [--] Check translations task is completed
+2022-05-23 22:03:02,006 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event PollImportRequest has received from queue
+2022-05-23 22:03:02,024 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Importer com.smartling.repoconnector.services.scheduler.RepositoryPollingImporterImpl@7742a276 is used to handle the event
+2022-05-23 22:03:02,024 INFO {RepositoryPollingImporterImpl.java:47} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is starting...
+2022-05-23 22:03:02,226 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 22:03:02,239 INFO {RepositoryPollingImporterImpl.java:87} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is finished
+2022-05-23 22:03:02,240 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 22:05:00,000 INFO {TranslationStatusChecker.java:82} [--] Check translations task is starting...
+2022-05-23 22:05:00,003 INFO {TranslationStatusChecker.java:146} [--] Scheduler creates an import request for []
+2022-05-23 22:05:00,003 INFO {TranslationStatusChecker.java:94} [--] Check translations task is completed
+2022-05-23 22:05:02,003 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event PollImportRequest has received from queue
+2022-05-23 22:05:02,022 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Importer com.smartling.repoconnector.services.scheduler.RepositoryPollingImporterImpl@7742a276 is used to handle the event
+2022-05-23 22:05:02,023 INFO {RepositoryPollingImporterImpl.java:47} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is starting...
+2022-05-23 22:05:02,231 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 22:05:02,236 INFO {RepositoryPollingImporterImpl.java:87} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is finished
+2022-05-23 22:05:02,236 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 22:07:00,000 INFO {TranslationStatusChecker.java:82} [--] Check translations task is starting...
+2022-05-23 22:07:00,004 INFO {TranslationStatusChecker.java:146} [--] Scheduler creates an import request for []
+2022-05-23 22:07:00,023 INFO {TranslationStatusChecker.java:94} [--] Check translations task is completed
+2022-05-23 22:07:02,005 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event PollImportRequest has received from queue
+2022-05-23 22:07:02,024 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Importer com.smartling.repoconnector.services.scheduler.RepositoryPollingImporterImpl@7742a276 is used to handle the event
+2022-05-23 22:07:02,024 INFO {RepositoryPollingImporterImpl.java:47} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is starting...
+2022-05-23 22:07:02,223 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 22:07:02,229 INFO {RepositoryPollingImporterImpl.java:73} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Scheduler creates an import request for main branch and 3e6382d4b66f0d5c18c5e4d6ec5df42f556193ee revision
+2022-05-23 22:07:02,254 INFO {RepositoryPollingImporterImpl.java:87} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is finished
+2022-05-23 22:07:02,255 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 22:07:04,003 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Import event PushImportRequest has received from queue
+2022-05-23 22:07:04,022 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Importer com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl@2493eec6 is used to handle the event
+2022-05-23 22:07:04,023 INFO {Vcs2SmartlingImporterImpl.java:51} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Push (files to Smartling) event handling starting...
+2022-05-23 22:07:04,044 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 22:07:04,045 INFO {Vcs2SmartlingImporterImpl.java:96} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Starting processing revisions from 48ca90d6043647476eb732ea13bc37efb3ae6976 to 3e6382d4b66f0d5c18c5e4d6ec5df42f556193ee
+2022-05-23 22:07:04,372 INFO {Vcs2SmartlingImporterImpl.java:98} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Repository is updated to head
+2022-05-23 22:07:04,373 INFO {Vcs2SmartlingImporterImpl.java:116} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Repository resources configuration file smartling-config.json
+2022-05-23 22:07:04,374 INFO {ResourcesConfigurationImpl.java:121} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Resources configuration read from cfg/repository-data/GIT_github_com_ashokvijayendra_public_git/smartling-config.json, there are 1 sets
+2022-05-23 22:07:04,388 INFO {Vcs2SmartlingImporterImpl.java:188} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] There are 1 changes detected in repository
+2022-05-23 22:07:04,388 INFO {Vcs2SmartlingImporterImpl.java:191} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] There are 1 preprocessed resources must be uploaded to smartling
+2022-05-23 22:07:04,389 INFO {Vcs2SmartlingImporterImpl.java:193} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] There are 1 resources must be uploaded to smartling
+2022-05-23 22:07:04,405 INFO {SmartlingApiFacadeImpl.java:271} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Resource /github_ashok_test/main/gittest.properties, type JAVA_PROPERTIES, authorized true, callback null is uploading to smartling...
+2022-05-23 22:07:04,960 INFO {RetryLogger.java:31} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Retryable method FilesApiClient.uploadFile threw a 1st exception: http_status=400, requestId=87960782-1bd0-4008-915f-4179cb792129, top errors: 'Invalid locale: fr-FR'
+2022-05-23 22:07:04,961 ERROR {Vcs2SmartlingImporterImpl.java:205} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Uploading resource to Smartling failed: requestId=87960782-1bd0-4008-915f-4179cb792129, status=400, changeType='MODIFY', resourceType='JAVA_PROPERTIES', path='gittest.properties', previousPath='gittest.properties' : "Invalid locale: fr-FR"
+com.smartling.repoconnector.services.exception.UnrecoverableSmartlingRestApiException: Can't upload with with fileUri=/github_ashok_test/main/gittest.properties
+	at com.smartling.repoconnector.services.integration.FilesApiClient.wrap(FilesApiClient.java:120)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.lambda$uploadFile$15(FilesApiClient.java:112)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.execute(FilesApiClient.java:141)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.uploadFile(FilesApiClient.java:109)
+	at com.smartling.repoconnector.services.integration.uploader.SmartlingApiFacadeImpl.uploadFile(SmartlingApiFacadeImpl.java:288)
+	at com.smartling.repoconnector.services.integration.uploader.SmartlingApiFacadeImpl.upload(SmartlingApiFacadeImpl.java:105)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.uploadResources(Vcs2SmartlingImporterImpl.java:199)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.processRevisions(Vcs2SmartlingImporterImpl.java:156)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.getResultUsingRepositoryConfig(Vcs2SmartlingImporterImpl.java:124)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.processNewRevision(Vcs2SmartlingImporterImpl.java:108)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.handlePushEvent(Vcs2SmartlingImporterImpl.java:76)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.importData(Vcs2SmartlingImporterImpl.java:58)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.importData(Vcs2SmartlingImporterImpl.java:37)
+	at com.smartling.repoconnector.services.queue.QueueImportDataListener.onMessage(QueueImportDataListener.java:70)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1189)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1179)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1076)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.smartling.api.v2.client.exception.client.ValidationErrorException: http_status=400, requestId=87960782-1bd0-4008-915f-4179cb792129, top errors: 'Invalid locale: fr-FR'
+	at com.smartling.api.v2.client.exception.DefaultRestApiExceptionMapper.toExceptionByStatus(DefaultRestApiExceptionMapper.java:89)
+	at com.smartling.api.v2.client.exception.DefaultRestApiExceptionMapper.toException(DefaultRestApiExceptionMapper.java:44)
+	at com.smartling.api.files.v2.exceptions.FilesApiExceptionMapper.toException(FilesApiExceptionMapper.java:44)
+	at com.smartling.api.v2.client.exception.RestApiExceptionHandler.createRestApiException(RestApiExceptionHandler.java:31)
+	at com.smartling.api.v2.client.ExceptionDecoratorInvocationHandler.invoke(ExceptionDecoratorInvocationHandler.java:34)
+	at jdk.proxy2/jdk.proxy2.$Proxy113.uploadFile(Unknown Source)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.lambda$uploadFile$14(FilesApiClient.java:111)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.lambda$execute$16(FilesApiClient.java:135)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:329)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:209)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.execute(FilesApiClient.java:132)
+	... 20 common frames omitted
+Caused by: javax.ws.rs.BadRequestException: HTTP 400 Bad Request
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.handleErrorStatus(ClientInvocation.java:220)
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.extractResult(ClientInvocation.java:196)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.extractors.BodyEntityExtractor.extractEntity(BodyEntityExtractor.java:62)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invokeSync(ClientInvoker.java:151)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invoke(ClientInvoker.java:112)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientProxy.invoke(ClientProxy.java:76)
+	at jdk.proxy2/jdk.proxy2.$Proxy112.uploadFile(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at com.smartling.api.v2.client.ExceptionDecoratorInvocationHandler.invoke(ExceptionDecoratorInvocationHandler.java:30)
+	... 26 common frames omitted
+2022-05-23 22:07:04,972 INFO {Vcs2SmartlingImporterImpl.java:171} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Revisions from 48ca90d6043647476eb732ea13bc37efb3ae6976 to 3e6382d4b66f0d5c18c5e4d6ec5df42f556193ee was processed successfully
+2022-05-23 22:07:04,972 INFO {Vcs2SmartlingImporterImpl.java:85} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Push event handling is finished successfully
+2022-05-23 22:07:04,973 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 22:10:00,003 INFO {TranslationStatusChecker.java:82} [--] Check translations task is starting...
+2022-05-23 22:10:00,025 INFO {TranslationStatusChecker.java:146} [--] Scheduler creates an import request for []
+2022-05-23 22:10:00,026 INFO {TranslationStatusChecker.java:94} [--] Check translations task is completed
+2022-05-23 22:10:02,005 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event PollImportRequest has received from queue
+2022-05-23 22:10:02,023 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Importer com.smartling.repoconnector.services.scheduler.RepositoryPollingImporterImpl@7742a276 is used to handle the event
+2022-05-23 22:10:02,023 INFO {RepositoryPollingImporterImpl.java:47} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is starting...
+2022-05-23 22:10:02,236 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 22:10:02,243 INFO {RepositoryPollingImporterImpl.java:87} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is finished
+2022-05-23 22:10:02,244 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 22:13:00,002 INFO {TranslationStatusChecker.java:82} [--] Check translations task is starting...
+2022-05-23 22:13:00,024 INFO {TranslationStatusChecker.java:146} [--] Scheduler creates an import request for []
+2022-05-23 22:13:00,024 INFO {TranslationStatusChecker.java:94} [--] Check translations task is completed
+2022-05-23 22:13:02,007 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event PollImportRequest has received from queue
+2022-05-23 22:13:02,030 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Importer com.smartling.repoconnector.services.scheduler.RepositoryPollingImporterImpl@7742a276 is used to handle the event
+2022-05-23 22:13:02,031 INFO {RepositoryPollingImporterImpl.java:47} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is starting...
+2022-05-23 22:13:02,234 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 22:13:02,240 INFO {RepositoryPollingImporterImpl.java:87} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is finished
+2022-05-23 22:13:02,240 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 22:16:00,001 INFO {TranslationStatusChecker.java:82} [--] Check translations task is starting...
+2022-05-23 22:16:00,022 INFO {TranslationStatusChecker.java:146} [--] Scheduler creates an import request for []
+2022-05-23 22:16:00,022 INFO {TranslationStatusChecker.java:94} [--] Check translations task is completed
+2022-05-23 22:16:02,004 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event PollImportRequest has received from queue
+2022-05-23 22:16:02,023 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Importer com.smartling.repoconnector.services.scheduler.RepositoryPollingImporterImpl@7742a276 is used to handle the event
+2022-05-23 22:16:02,023 INFO {RepositoryPollingImporterImpl.java:47} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is starting...
+2022-05-23 22:16:02,215 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 22:16:02,221 INFO {RepositoryPollingImporterImpl.java:87} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is finished
+2022-05-23 22:16:02,221 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 22:19:00,009 INFO {TranslationStatusChecker.java:82} [--] Check translations task is starting...
+2022-05-23 22:19:00,030 INFO {TranslationStatusChecker.java:146} [--] Scheduler creates an import request for []
+2022-05-23 22:19:00,031 INFO {TranslationStatusChecker.java:94} [--] Check translations task is completed
+2022-05-23 22:19:02,006 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event PollImportRequest has received from queue
+2022-05-23 22:19:02,025 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Importer com.smartling.repoconnector.services.scheduler.RepositoryPollingImporterImpl@7742a276 is used to handle the event
+2022-05-23 22:19:02,026 INFO {RepositoryPollingImporterImpl.java:47} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is starting...
+2022-05-23 22:19:02,234 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 22:19:02,241 INFO {RepositoryPollingImporterImpl.java:87} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is finished
+2022-05-23 22:19:02,242 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 22:51:52,365 INFO {TranslationStatusChecker.java:82} [--] Check translations task is starting...
+2022-05-23 22:51:52,372 INFO {TranslationStatusChecker.java:146} [--] Scheduler creates an import request for []
+2022-05-23 22:51:52,393 INFO {TranslationStatusChecker.java:94} [--] Check translations task is completed
+2022-05-23 22:51:54,012 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event PollImportRequest has received from queue
+2022-05-23 22:51:54,030 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Importer com.smartling.repoconnector.services.scheduler.RepositoryPollingImporterImpl@7742a276 is used to handle the event
+2022-05-23 22:51:54,031 INFO {RepositoryPollingImporterImpl.java:47} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is starting...
+2022-05-23 22:51:54,259 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 22:51:54,275 INFO {RepositoryPollingImporterImpl.java:87} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is finished
+2022-05-23 22:51:54,276 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 23:07:04,962 INFO {TranslationStatusChecker.java:82} [--] Check translations task is starting...
+2022-05-23 23:07:05,327 INFO {TranslationStatusChecker.java:146} [--] Scheduler creates an import request for []
+2022-05-23 23:07:05,355 INFO {TranslationStatusChecker.java:94} [--] Check translations task is completed
+2022-05-23 23:07:06,011 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event PollImportRequest has received from queue
+2022-05-23 23:07:06,012 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Importer com.smartling.repoconnector.services.scheduler.RepositoryPollingImporterImpl@7742a276 is used to handle the event
+2022-05-23 23:07:06,012 INFO {RepositoryPollingImporterImpl.java:47} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is starting...
+2022-05-23 23:07:06,189 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 23:07:06,195 INFO {RepositoryPollingImporterImpl.java:87} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is finished
+2022-05-23 23:07:06,195 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 23:29:01,577 INFO {TranslationStatusChecker.java:82} [--] Check translations task is starting...
+2022-05-23 23:29:01,583 INFO {TranslationStatusChecker.java:146} [--] Scheduler creates an import request for []
+2022-05-23 23:29:01,583 INFO {TranslationStatusChecker.java:94} [--] Check translations task is completed
+2022-05-23 23:29:03,004 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event PollImportRequest has received from queue
+2022-05-23 23:29:03,023 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Importer com.smartling.repoconnector.services.scheduler.RepositoryPollingImporterImpl@7742a276 is used to handle the event
+2022-05-23 23:29:03,024 INFO {RepositoryPollingImporterImpl.java:47} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is starting...
+2022-05-23 23:29:03,289 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 23:29:03,313 INFO {RepositoryPollingImporterImpl.java:87} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is finished
+2022-05-23 23:29:03,313 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 23:32:00,001 INFO {TranslationStatusChecker.java:82} [--] Check translations task is starting...
+2022-05-23 23:32:00,026 INFO {TranslationStatusChecker.java:146} [--] Scheduler creates an import request for []
+2022-05-23 23:32:00,026 INFO {TranslationStatusChecker.java:94} [--] Check translations task is completed
+2022-05-23 23:32:02,009 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event PollImportRequest has received from queue
+2022-05-23 23:32:02,025 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Importer com.smartling.repoconnector.services.scheduler.RepositoryPollingImporterImpl@7742a276 is used to handle the event
+2022-05-23 23:32:02,026 INFO {RepositoryPollingImporterImpl.java:47} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is starting...
+2022-05-23 23:32:02,254 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 23:32:02,264 INFO {RepositoryPollingImporterImpl.java:73} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Scheduler creates an import request for main branch and c540926061e0fc183829f191ccac3dfb48ee3054 revision
+2022-05-23 23:32:02,286 INFO {RepositoryPollingImporterImpl.java:87} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is finished
+2022-05-23 23:32:02,286 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 23:32:04,005 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Import event PushImportRequest has received from queue
+2022-05-23 23:32:04,005 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Importer com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl@2493eec6 is used to handle the event
+2022-05-23 23:32:04,024 INFO {Vcs2SmartlingImporterImpl.java:51} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Push (files to Smartling) event handling starting...
+2022-05-23 23:32:04,077 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 23:32:04,079 INFO {Vcs2SmartlingImporterImpl.java:96} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Starting processing revisions from 3e6382d4b66f0d5c18c5e4d6ec5df42f556193ee to c540926061e0fc183829f191ccac3dfb48ee3054
+2022-05-23 23:32:04,455 INFO {Vcs2SmartlingImporterImpl.java:98} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Repository is updated to head
+2022-05-23 23:32:04,456 INFO {Vcs2SmartlingImporterImpl.java:116} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Repository resources configuration file smartling-config.json
+2022-05-23 23:32:04,459 INFO {ResourcesConfigurationImpl.java:121} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Resources configuration read from cfg/repository-data/GIT_github_com_ashokvijayendra_public_git/smartling-config.json, there are 1 sets
+2022-05-23 23:32:04,461 INFO {Vcs2SmartlingImporterImpl.java:121} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Repository resources configuration file smartling-config.json is changed from previous state
+2022-05-23 23:32:04,461 INFO {Vcs2SmartlingImporterImpl.java:188} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] There are 9 changes detected in repository
+2022-05-23 23:32:04,462 INFO {Vcs2SmartlingImporterImpl.java:191} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] There are 9 preprocessed resources must be uploaded to smartling
+2022-05-23 23:32:04,463 INFO {Vcs2SmartlingImporterImpl.java:193} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] There are 2 resources must be uploaded to smartling
+2022-05-23 23:32:04,491 INFO {SmartlingApiFacadeImpl.java:271} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Resource /github_ashok_test/main/gittest.properties, type JAVA_PROPERTIES, authorized true, callback null is uploading to smartling...
+2022-05-23 23:32:04,967 INFO {RetryLogger.java:31} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Retryable method FilesApiClient.uploadFile threw a 1st exception: http_status=400, requestId=28ecbec7-ac03-4cff-aee0-77667b7475db, top errors: 'Invalid locale: es'
+2022-05-23 23:32:04,968 ERROR {Vcs2SmartlingImporterImpl.java:205} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Uploading resource to Smartling failed: requestId=28ecbec7-ac03-4cff-aee0-77667b7475db, status=400, changeType='ADD', resourceType='JAVA_PROPERTIES', path='gittest.properties', previousPath='null' : "Invalid locale: es"
+com.smartling.repoconnector.services.exception.UnrecoverableSmartlingRestApiException: Can't upload with with fileUri=/github_ashok_test/main/gittest.properties
+	at com.smartling.repoconnector.services.integration.FilesApiClient.wrap(FilesApiClient.java:120)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.lambda$uploadFile$15(FilesApiClient.java:112)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.execute(FilesApiClient.java:141)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.uploadFile(FilesApiClient.java:109)
+	at com.smartling.repoconnector.services.integration.uploader.SmartlingApiFacadeImpl.uploadFile(SmartlingApiFacadeImpl.java:288)
+	at com.smartling.repoconnector.services.integration.uploader.SmartlingApiFacadeImpl.upload(SmartlingApiFacadeImpl.java:105)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.uploadResources(Vcs2SmartlingImporterImpl.java:199)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.processRevisions(Vcs2SmartlingImporterImpl.java:156)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.getResultUsingRepositoryConfig(Vcs2SmartlingImporterImpl.java:124)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.processNewRevision(Vcs2SmartlingImporterImpl.java:108)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.handlePushEvent(Vcs2SmartlingImporterImpl.java:76)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.importData(Vcs2SmartlingImporterImpl.java:58)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.importData(Vcs2SmartlingImporterImpl.java:37)
+	at com.smartling.repoconnector.services.queue.QueueImportDataListener.onMessage(QueueImportDataListener.java:70)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1189)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1179)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1076)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.smartling.api.v2.client.exception.client.ValidationErrorException: http_status=400, requestId=28ecbec7-ac03-4cff-aee0-77667b7475db, top errors: 'Invalid locale: es'
+	at com.smartling.api.v2.client.exception.DefaultRestApiExceptionMapper.toExceptionByStatus(DefaultRestApiExceptionMapper.java:89)
+	at com.smartling.api.v2.client.exception.DefaultRestApiExceptionMapper.toException(DefaultRestApiExceptionMapper.java:44)
+	at com.smartling.api.files.v2.exceptions.FilesApiExceptionMapper.toException(FilesApiExceptionMapper.java:44)
+	at com.smartling.api.v2.client.exception.RestApiExceptionHandler.createRestApiException(RestApiExceptionHandler.java:31)
+	at com.smartling.api.v2.client.ExceptionDecoratorInvocationHandler.invoke(ExceptionDecoratorInvocationHandler.java:34)
+	at jdk.proxy2/jdk.proxy2.$Proxy113.uploadFile(Unknown Source)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.lambda$uploadFile$14(FilesApiClient.java:111)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.lambda$execute$16(FilesApiClient.java:135)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:329)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:209)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.execute(FilesApiClient.java:132)
+	... 20 common frames omitted
+Caused by: javax.ws.rs.BadRequestException: HTTP 400 Bad Request
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.handleErrorStatus(ClientInvocation.java:220)
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.extractResult(ClientInvocation.java:196)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.extractors.BodyEntityExtractor.extractEntity(BodyEntityExtractor.java:62)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invokeSync(ClientInvoker.java:151)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invoke(ClientInvoker.java:112)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientProxy.invoke(ClientProxy.java:76)
+	at jdk.proxy2/jdk.proxy2.$Proxy112.uploadFile(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at com.smartling.api.v2.client.ExceptionDecoratorInvocationHandler.invoke(ExceptionDecoratorInvocationHandler.java:30)
+	... 26 common frames omitted
+2022-05-23 23:32:04,986 INFO {SmartlingApiFacadeImpl.java:271} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Resource /github_ashok_test/main/translated/gittest_fr-FR.properties, type JAVA_PROPERTIES, authorized true, callback null is uploading to smartling...
+2022-05-23 23:32:05,293 INFO {RetryLogger.java:31} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Retryable method FilesApiClient.uploadFile threw a 1st exception: http_status=400, requestId=1e0bbffd-ac76-4879-bb95-b80367f1299f, top errors: 'Invalid locale: es'
+2022-05-23 23:32:05,294 ERROR {Vcs2SmartlingImporterImpl.java:205} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Uploading resource to Smartling failed: requestId=1e0bbffd-ac76-4879-bb95-b80367f1299f, status=400, changeType='ADD', resourceType='JAVA_PROPERTIES', path='translated/gittest_fr-FR.properties', previousPath='null' : "Invalid locale: es"
+com.smartling.repoconnector.services.exception.UnrecoverableSmartlingRestApiException: Can't upload with with fileUri=/github_ashok_test/main/translated/gittest_fr-FR.properties
+	at com.smartling.repoconnector.services.integration.FilesApiClient.wrap(FilesApiClient.java:120)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.lambda$uploadFile$15(FilesApiClient.java:112)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.execute(FilesApiClient.java:141)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.uploadFile(FilesApiClient.java:109)
+	at com.smartling.repoconnector.services.integration.uploader.SmartlingApiFacadeImpl.uploadFile(SmartlingApiFacadeImpl.java:288)
+	at com.smartling.repoconnector.services.integration.uploader.SmartlingApiFacadeImpl.upload(SmartlingApiFacadeImpl.java:105)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.uploadResources(Vcs2SmartlingImporterImpl.java:199)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.processRevisions(Vcs2SmartlingImporterImpl.java:156)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.getResultUsingRepositoryConfig(Vcs2SmartlingImporterImpl.java:124)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.processNewRevision(Vcs2SmartlingImporterImpl.java:108)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.handlePushEvent(Vcs2SmartlingImporterImpl.java:76)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.importData(Vcs2SmartlingImporterImpl.java:58)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.importData(Vcs2SmartlingImporterImpl.java:37)
+	at com.smartling.repoconnector.services.queue.QueueImportDataListener.onMessage(QueueImportDataListener.java:70)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1189)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1179)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1076)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.smartling.api.v2.client.exception.client.ValidationErrorException: http_status=400, requestId=1e0bbffd-ac76-4879-bb95-b80367f1299f, top errors: 'Invalid locale: es'
+	at com.smartling.api.v2.client.exception.DefaultRestApiExceptionMapper.toExceptionByStatus(DefaultRestApiExceptionMapper.java:89)
+	at com.smartling.api.v2.client.exception.DefaultRestApiExceptionMapper.toException(DefaultRestApiExceptionMapper.java:44)
+	at com.smartling.api.files.v2.exceptions.FilesApiExceptionMapper.toException(FilesApiExceptionMapper.java:44)
+	at com.smartling.api.v2.client.exception.RestApiExceptionHandler.createRestApiException(RestApiExceptionHandler.java:31)
+	at com.smartling.api.v2.client.ExceptionDecoratorInvocationHandler.invoke(ExceptionDecoratorInvocationHandler.java:34)
+	at jdk.proxy2/jdk.proxy2.$Proxy113.uploadFile(Unknown Source)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.lambda$uploadFile$14(FilesApiClient.java:111)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.lambda$execute$16(FilesApiClient.java:135)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:329)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:209)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.execute(FilesApiClient.java:132)
+	... 20 common frames omitted
+Caused by: javax.ws.rs.BadRequestException: HTTP 400 Bad Request
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.handleErrorStatus(ClientInvocation.java:220)
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.extractResult(ClientInvocation.java:196)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.extractors.BodyEntityExtractor.extractEntity(BodyEntityExtractor.java:62)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invokeSync(ClientInvoker.java:151)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invoke(ClientInvoker.java:112)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientProxy.invoke(ClientProxy.java:76)
+	at jdk.proxy2/jdk.proxy2.$Proxy112.uploadFile(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at com.smartling.api.v2.client.ExceptionDecoratorInvocationHandler.invoke(ExceptionDecoratorInvocationHandler.java:30)
+	... 26 common frames omitted
+2022-05-23 23:32:05,300 INFO {Vcs2SmartlingImporterImpl.java:171} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Revisions from null to c540926061e0fc183829f191ccac3dfb48ee3054 was processed successfully
+2022-05-23 23:32:05,300 INFO {Vcs2SmartlingImporterImpl.java:85} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Push event handling is finished successfully
+2022-05-23 23:32:05,301 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 23:35:00,004 INFO {TranslationStatusChecker.java:82} [--] Check translations task is starting...
+2022-05-23 23:35:00,027 INFO {TranslationStatusChecker.java:146} [--] Scheduler creates an import request for []
+2022-05-23 23:35:00,027 INFO {TranslationStatusChecker.java:94} [--] Check translations task is completed
+2022-05-23 23:35:02,003 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event PollImportRequest has received from queue
+2022-05-23 23:35:02,023 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Importer com.smartling.repoconnector.services.scheduler.RepositoryPollingImporterImpl@7742a276 is used to handle the event
+2022-05-23 23:35:02,023 INFO {RepositoryPollingImporterImpl.java:47} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is starting...
+2022-05-23 23:35:02,234 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 23:35:02,240 INFO {RepositoryPollingImporterImpl.java:87} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is finished
+2022-05-23 23:35:02,240 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 23:38:00,003 INFO {TranslationStatusChecker.java:82} [--] Check translations task is starting...
+2022-05-23 23:38:00,008 INFO {TranslationStatusChecker.java:146} [--] Scheduler creates an import request for []
+2022-05-23 23:38:00,028 INFO {TranslationStatusChecker.java:94} [--] Check translations task is completed
+2022-05-23 23:38:02,006 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event PollImportRequest has received from queue
+2022-05-23 23:38:02,024 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Importer com.smartling.repoconnector.services.scheduler.RepositoryPollingImporterImpl@7742a276 is used to handle the event
+2022-05-23 23:38:02,024 INFO {RepositoryPollingImporterImpl.java:47} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is starting...
+2022-05-23 23:38:02,220 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 23:38:02,226 INFO {RepositoryPollingImporterImpl.java:73} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Scheduler creates an import request for main branch and 78221abadb2e90860c0c58933d824558dba95fd5 revision
+2022-05-23 23:38:02,247 INFO {RepositoryPollingImporterImpl.java:87} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is finished
+2022-05-23 23:38:02,247 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 23:38:04,007 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Import event PushImportRequest has received from queue
+2022-05-23 23:38:04,008 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Importer com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl@2493eec6 is used to handle the event
+2022-05-23 23:38:04,009 INFO {Vcs2SmartlingImporterImpl.java:51} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Push (files to Smartling) event handling starting...
+2022-05-23 23:38:04,031 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 23:38:04,052 INFO {Vcs2SmartlingImporterImpl.java:96} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Starting processing revisions from c540926061e0fc183829f191ccac3dfb48ee3054 to 78221abadb2e90860c0c58933d824558dba95fd5
+2022-05-23 23:38:04,390 INFO {Vcs2SmartlingImporterImpl.java:98} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Repository is updated to head
+2022-05-23 23:38:04,391 INFO {Vcs2SmartlingImporterImpl.java:116} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Repository resources configuration file smartling-config.json
+2022-05-23 23:38:04,392 INFO {ResourcesConfigurationImpl.java:121} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Resources configuration read from cfg/repository-data/GIT_github_com_ashokvijayendra_public_git/smartling-config.json, there are 1 sets
+2022-05-23 23:38:04,394 INFO {Vcs2SmartlingImporterImpl.java:188} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] There are 1 changes detected in repository
+2022-05-23 23:38:04,394 INFO {Vcs2SmartlingImporterImpl.java:191} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] There are 1 preprocessed resources must be uploaded to smartling
+2022-05-23 23:38:04,395 INFO {Vcs2SmartlingImporterImpl.java:193} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] There are 1 resources must be uploaded to smartling
+2022-05-23 23:38:04,411 INFO {SmartlingApiFacadeImpl.java:271} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Resource /github_ashok_test/main/gittest.properties, type JAVA_PROPERTIES, authorized true, callback null is uploading to smartling...
+2022-05-23 23:38:04,732 INFO {RetryLogger.java:31} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Retryable method FilesApiClient.uploadFile threw a 1st exception: http_status=400, requestId=780cfc2e-0cac-4dbf-9fec-52a982035f0b, top errors: 'Invalid locale: es'
+2022-05-23 23:38:04,733 ERROR {Vcs2SmartlingImporterImpl.java:205} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Uploading resource to Smartling failed: requestId=780cfc2e-0cac-4dbf-9fec-52a982035f0b, status=400, changeType='MODIFY', resourceType='JAVA_PROPERTIES', path='gittest.properties', previousPath='gittest.properties' : "Invalid locale: es"
+com.smartling.repoconnector.services.exception.UnrecoverableSmartlingRestApiException: Can't upload with with fileUri=/github_ashok_test/main/gittest.properties
+	at com.smartling.repoconnector.services.integration.FilesApiClient.wrap(FilesApiClient.java:120)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.lambda$uploadFile$15(FilesApiClient.java:112)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.execute(FilesApiClient.java:141)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.uploadFile(FilesApiClient.java:109)
+	at com.smartling.repoconnector.services.integration.uploader.SmartlingApiFacadeImpl.uploadFile(SmartlingApiFacadeImpl.java:288)
+	at com.smartling.repoconnector.services.integration.uploader.SmartlingApiFacadeImpl.upload(SmartlingApiFacadeImpl.java:105)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.uploadResources(Vcs2SmartlingImporterImpl.java:199)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.processRevisions(Vcs2SmartlingImporterImpl.java:156)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.getResultUsingRepositoryConfig(Vcs2SmartlingImporterImpl.java:124)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.processNewRevision(Vcs2SmartlingImporterImpl.java:108)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.handlePushEvent(Vcs2SmartlingImporterImpl.java:76)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.importData(Vcs2SmartlingImporterImpl.java:58)
+	at com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl.importData(Vcs2SmartlingImporterImpl.java:37)
+	at com.smartling.repoconnector.services.queue.QueueImportDataListener.onMessage(QueueImportDataListener.java:70)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1189)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1179)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1076)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: com.smartling.api.v2.client.exception.client.ValidationErrorException: http_status=400, requestId=780cfc2e-0cac-4dbf-9fec-52a982035f0b, top errors: 'Invalid locale: es'
+	at com.smartling.api.v2.client.exception.DefaultRestApiExceptionMapper.toExceptionByStatus(DefaultRestApiExceptionMapper.java:89)
+	at com.smartling.api.v2.client.exception.DefaultRestApiExceptionMapper.toException(DefaultRestApiExceptionMapper.java:44)
+	at com.smartling.api.files.v2.exceptions.FilesApiExceptionMapper.toException(FilesApiExceptionMapper.java:44)
+	at com.smartling.api.v2.client.exception.RestApiExceptionHandler.createRestApiException(RestApiExceptionHandler.java:31)
+	at com.smartling.api.v2.client.ExceptionDecoratorInvocationHandler.invoke(ExceptionDecoratorInvocationHandler.java:34)
+	at jdk.proxy2/jdk.proxy2.$Proxy113.uploadFile(Unknown Source)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.lambda$uploadFile$14(FilesApiClient.java:111)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.lambda$execute$16(FilesApiClient.java:135)
+	at org.springframework.retry.support.RetryTemplate.doExecute(RetryTemplate.java:329)
+	at org.springframework.retry.support.RetryTemplate.execute(RetryTemplate.java:209)
+	at com.smartling.repoconnector.services.integration.FilesApiClient.execute(FilesApiClient.java:132)
+	... 20 common frames omitted
+Caused by: javax.ws.rs.BadRequestException: HTTP 400 Bad Request
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.handleErrorStatus(ClientInvocation.java:220)
+	at org.jboss.resteasy.client.jaxrs.internal.ClientInvocation.extractResult(ClientInvocation.java:196)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.extractors.BodyEntityExtractor.extractEntity(BodyEntityExtractor.java:62)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invokeSync(ClientInvoker.java:151)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientInvoker.invoke(ClientInvoker.java:112)
+	at org.jboss.resteasy.client.jaxrs.internal.proxy.ClientProxy.invoke(ClientProxy.java:76)
+	at jdk.proxy2/jdk.proxy2.$Proxy112.uploadFile(Unknown Source)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at com.smartling.api.v2.client.ExceptionDecoratorInvocationHandler.invoke(ExceptionDecoratorInvocationHandler.java:30)
+	... 26 common frames omitted
+2022-05-23 23:38:04,737 INFO {Vcs2SmartlingImporterImpl.java:171} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Revisions from c540926061e0fc183829f191ccac3dfb48ee3054 to 78221abadb2e90860c0c58933d824558dba95fd5 was processed successfully
+2022-05-23 23:38:04,737 INFO {Vcs2SmartlingImporterImpl.java:85} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Push event handling is finished successfully
+2022-05-23 23:38:04,738 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 23:41:00,004 INFO {TranslationStatusChecker.java:82} [--] Check translations task is starting...
+2022-05-23 23:41:00,031 INFO {TranslationStatusChecker.java:146} [--] Scheduler creates an import request for []
+2022-05-23 23:41:00,031 INFO {TranslationStatusChecker.java:94} [--] Check translations task is completed
+2022-05-23 23:41:02,003 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event PollImportRequest has received from queue
+2022-05-23 23:41:02,022 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Importer com.smartling.repoconnector.services.scheduler.RepositoryPollingImporterImpl@7742a276 is used to handle the event
+2022-05-23 23:41:02,022 INFO {RepositoryPollingImporterImpl.java:47} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is starting...
+2022-05-23 23:41:02,221 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 23:41:02,227 INFO {RepositoryPollingImporterImpl.java:87} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is finished
+2022-05-23 23:41:02,228 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 23:42:36,656 INFO {RepoConnector.java:174} [--] Repository Connector Stopped
+2022-05-23 23:42:36,656 INFO {BrokerManager.java:141} [--] Repository Connector is stopping
+2022-05-23 23:42:46,527 INFO {RepoConnector.java:87} [--] Repo connector version is 1.7.10
+2022-05-23 23:42:46,532 INFO {RepoConnector.java:89} [--] Configuration is cfg
+2022-05-23 23:42:48,684 INFO {RepositoryFactoryImpl.java:55} [--] Repository factory configuration are reading...
+2022-05-23 23:42:48,685 INFO {RepositoryFactoryImpl.java:61} [--] Repository factory configuration are read successfully. There are 6 specific connectors
+2022-05-23 23:42:48,694 INFO {ConfigRepositoryDataProviderImpl.java:86} [--] Repository configurations are reading...
+2022-05-23 23:42:48,721 INFO {ConfigRepositoryDataProviderImpl.java:127} [--] Repository RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>] are added, alias github_ashok_test, project f08ee008d, auth type USER_PASSWORD
+2022-05-23 23:42:48,727 INFO {ConfigRepositoryDataProviderImpl.java:129} [--] Repository configurations are read successfully. There are 1 repositories
+2022-05-23 23:42:49,693 INFO {QueueImportDataListener.java:49} [--] Importer com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl@7757a37f is assigned to handle TranslationImportRequest data
+2022-05-23 23:42:49,694 INFO {QueueImportDataListener.java:49} [--] Importer com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl@588d630d is assigned to handle PushImportRequest data
+2022-05-23 23:42:49,694 INFO {QueueImportDataListener.java:49} [--] Importer com.smartling.repoconnector.services.scheduler.RepositoryPollingImporterImpl@16029e2f is assigned to handle PollImportRequest data
+2022-05-23 23:42:49,792 INFO {BrokerManager.java:128} [--] Repository Connector is starting
+2022-05-23 23:42:49,792 INFO {ActiveMQProvider.java:45} [--] Queue is started
+2022-05-23 23:42:50,222 INFO {HTTPSJerseyListener.java:68} [--] HTTP listener is started on http://0.0.0.0:5555
+2022-05-23 23:42:50,232 INFO {BrokerManager.java:134} [--] Metrics reposter is started. Output dir: cfg/metrics
+2022-05-23 23:42:50,233 INFO {BrokerManager.java:136} [--] Repository Connector successfully started
+2022-05-23 23:42:50,233 INFO {RepoConnector.java:213} [--] Repository Connector is starting
+2022-05-23 23:42:50,233 INFO {RepoConnector.java:214} [--] Checking health...
+2022-05-23 23:42:50,234 INFO {RepoConnector.java:311} [--] ActiveMQProvider is OK, parameters {handledConnections=0, connections=0, uptime=1.380 seconds}
+2022-05-23 23:42:50,234 INFO {RepoConnector.java:311} [--] HTTPSJerseyListener is OK
+2022-05-23 23:42:51,480 INFO {GitRepositoryConnector.java:442} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-] Repository is accessible
+2022-05-23 23:42:51,480 INFO {RepoConnector.java:311} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-] Repository RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>] is OK
+2022-05-23 23:42:51,481 INFO {RepoConnector.java:223} [--] The health is OK
+2022-05-23 23:42:51,483 INFO {RepositoryFactoryImpl.java:177} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-VCS2SMARTLING] Pooling task is scheduled with cron expression 0 */1 * * * ?
+2022-05-23 23:42:51,485 INFO {RepoConnector.java:225} [--] Periodical tasks are scheduled
+2022-05-23 23:43:00,001 INFO {TranslationStatusChecker.java:82} [--] Check translations task is starting...
+2022-05-23 23:43:00,103 INFO {TranslationStatusChecker.java:146} [--] Scheduler creates an import request for []
+2022-05-23 23:43:00,103 INFO {TranslationStatusChecker.java:94} [--] Check translations task is completed
+2022-05-23 23:43:02,008 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event PollImportRequest has received from queue
+2022-05-23 23:43:02,025 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Importer com.smartling.repoconnector.services.scheduler.RepositoryPollingImporterImpl@16029e2f is used to handle the event
+2022-05-23 23:43:02,026 INFO {RepositoryPollingImporterImpl.java:47} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is starting...
+2022-05-23 23:43:02,292 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 23:43:02,338 INFO {RepositoryPollingImporterImpl.java:73} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Scheduler creates an import request for main branch and ead3f44373ed13fdde707603e0e4cf45c1d3d605 revision
+2022-05-23 23:43:02,366 INFO {RepositoryPollingImporterImpl.java:87} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is finished
+2022-05-23 23:43:02,367 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 23:43:04,002 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Import event PushImportRequest has received from queue
+2022-05-23 23:43:04,003 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Importer com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl@588d630d is used to handle the event
+2022-05-23 23:43:04,022 INFO {Vcs2SmartlingImporterImpl.java:51} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Push (files to Smartling) event handling starting...
+2022-05-23 23:43:04,044 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 23:43:04,066 INFO {Vcs2SmartlingImporterImpl.java:96} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Starting processing revisions from 78221abadb2e90860c0c58933d824558dba95fd5 to ead3f44373ed13fdde707603e0e4cf45c1d3d605
+2022-05-23 23:43:04,577 INFO {Vcs2SmartlingImporterImpl.java:98} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Repository is updated to head
+2022-05-23 23:43:04,578 INFO {Vcs2SmartlingImporterImpl.java:116} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Repository resources configuration file smartling-config.json
+2022-05-23 23:43:04,581 INFO {ResourcesConfigurationImpl.java:121} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Resources configuration read from cfg/repository-data/GIT_github_com_ashokvijayendra_public_git/smartling-config.json, there are 1 sets
+2022-05-23 23:43:04,593 INFO {Vcs2SmartlingImporterImpl.java:121} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Repository resources configuration file smartling-config.json is changed from previous state
+2022-05-23 23:43:04,594 INFO {Vcs2SmartlingImporterImpl.java:188} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] There are 9 changes detected in repository
+2022-05-23 23:43:04,594 INFO {Vcs2SmartlingImporterImpl.java:191} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] There are 9 preprocessed resources must be uploaded to smartling
+2022-05-23 23:43:04,597 INFO {Vcs2SmartlingImporterImpl.java:193} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] There are 2 resources must be uploaded to smartling
+2022-05-23 23:43:04,615 INFO {SmartlingApiFacadeImpl.java:271} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Resource /github_ashok_test/main/gittest.properties, type JAVA_PROPERTIES, authorized true, callback null is uploading to smartling...
+2022-05-23 23:43:05,334 INFO {SmartlingApiFacadeImpl.java:294} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Resource /github_ashok_test/main/gittest.properties is uploaded successfully
+2022-05-23 23:43:05,349 INFO {SmartlingApiFacadeImpl.java:271} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Resource /github_ashok_test/main/translated/gittest_fr-FR.properties, type JAVA_PROPERTIES, authorized true, callback null is uploading to smartling...
+2022-05-23 23:43:06,008 INFO {SmartlingApiFacadeImpl.java:294} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Resource /github_ashok_test/main/translated/gittest_fr-FR.properties is uploaded successfully
+2022-05-23 23:43:06,014 INFO {Vcs2SmartlingImporterImpl.java:171} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Revisions from null to ead3f44373ed13fdde707603e0e4cf45c1d3d605 was processed successfully
+2022-05-23 23:43:06,015 INFO {Vcs2SmartlingImporterImpl.java:85} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Push event handling is finished successfully
+2022-05-23 23:43:06,016 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Import event is processed successfully. Result [com.smartling.repoconnector.model.ImportResult@710841b[OK,/github_ashok_test/main/gittest.properties,f08ee008d,<null>,IN_PROGRESS], com.smartling.repoconnector.model.ImportResult@8a066a4[OK,/github_ashok_test/main/translated/gittest_fr-FR.properties,f08ee008d,<null>,IN_PROGRESS]]
+2022-05-23 23:46:00,002 INFO {TranslationStatusChecker.java:82} [--] Check translations task is starting...
+2022-05-23 23:46:00,861 INFO {TranslationStatusChecker.java:146} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Scheduler creates an import request for [/github_ashok_test/main/gittest.properties, /github_ashok_test/main/translated/gittest_fr-FR.properties]
+2022-05-23 23:46:00,914 INFO {TranslationStatusChecker.java:94} [--] Check translations task is completed
+2022-05-23 23:46:02,007 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event PollImportRequest has received from queue
+2022-05-23 23:46:02,026 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Importer com.smartling.repoconnector.services.scheduler.RepositoryPollingImporterImpl@16029e2f is used to handle the event
+2022-05-23 23:46:02,026 INFO {RepositoryPollingImporterImpl.java:47} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is starting...
+2022-05-23 23:46:02,254 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 23:46:02,260 INFO {RepositoryPollingImporterImpl.java:73} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Scheduler creates an import request for main branch and 8a48fe3e9a41ef8dbc2b126a4753481bd7ae02ce revision
+2022-05-23 23:46:02,280 INFO {RepositoryPollingImporterImpl.java:87} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is finished
+2022-05-23 23:46:02,281 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 23:46:02,282 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Import event TranslationImportRequest has received from queue
+2022-05-23 23:46:02,282 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Importer com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl@7757a37f is used to handle the event
+2022-05-23 23:46:02,283 INFO {Smartling2VcsImporterImpl.java:81} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Translation event handling starting...
+2022-05-23 23:46:02,944 INFO {SmartlingApiFacadeImpl.java:150} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] File status total=6, authorized=0, unauthorized=0, completed=6, excluded=0, countUnauthorizedStrings=false for fileUri="/github_ashok_test/main/gittest.properties" and locale=es-US
+2022-05-23 23:46:03,151 INFO {Smartling2VcsImporterImpl.java:383} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Translated content is received for fileUri="/github_ashok_test/main/gittest.properties", locale=es-US
+2022-05-23 23:46:03,239 ERROR {LoggingErrorHandler.java:13} [--] Could not initialize class org.codehaus.groovy.reflection.ReflectionCache
+java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.reflection.ReflectionCache
+	at org.codehaus.groovy.runtime.dgmimpl.NumberNumberMetaMethod.<clinit>(NumberNumberMetaMethod.java:33)
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized0(Native Method)
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized(Unsafe.java:1160)
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.ensureClassInitialized(MethodHandleAccessorFactory.java:300)
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.newConstructorAccessor(MethodHandleAccessorFactory.java:103)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newConstructorAccessor(ReflectionFactory.java:236)
+	at java.base/java.lang.reflect.Constructor.acquireConstructorAccessor(Constructor.java:546)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:496)
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:341)
+	at java.base/java.lang.Class.newInstance(Class.java:677)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.createMetaMethodFromClass(MetaClassRegistryImpl.java:257)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:110)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:85)
+	at groovy.lang.GroovySystem.<clinit>(GroovySystem.java:36)
+	at org.codehaus.groovy.runtime.InvokerHelper.<clinit>(InvokerHelper.java:86)
+	at groovy.lang.GroovyObjectSupport.getDefaultMetaClass(GroovyObjectSupport.java:59)
+	at groovy.lang.GroovyObjectSupport.<init>(GroovyObjectSupport.java:32)
+	at groovy.lang.Binding.<init>(Binding.java:33)
+	at groovy.lang.GroovyShell.<init>(GroovyShell.java:75)
+	at com.smartling.repoconnector.services.importer.pathevaluator.GroovyNamedGroupPathEvaluator.evaluate(GroovyNamedGroupPathEvaluator.java:97)
+	at com.smartling.repoconnector.services.importer.pathevaluator.GroovyNamedGroupPathEvaluator.evaluatePathExpression(GroovyNamedGroupPathEvaluator.java:60)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.getEvaluationResult(Smartling2VcsImporterImpl.java:384)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.mapToEvaluationResult(Smartling2VcsImporterImpl.java:289)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.pushContent(Smartling2VcsImporterImpl.java:203)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.processTranslationImportRequest(Smartling2VcsImporterImpl.java:110)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.importData(Smartling2VcsImporterImpl.java:85)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.importData(Smartling2VcsImporterImpl.java:48)
+	at com.smartling.repoconnector.services.queue.QueueImportDataListener.onMessage(QueueImportDataListener.java:70)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1189)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1179)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1076)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.vmplugin.v7.Java7 [in thread "org.springframework.jms.listener.DefaultMessageListenerContainer#0-1"]
+	at org.codehaus.groovy.vmplugin.VMPluginFactory.<clinit>(VMPluginFactory.java:43)
+	at org.codehaus.groovy.reflection.GroovyClassValueFactory.<clinit>(GroovyClassValueFactory.java:35)
+	at org.codehaus.groovy.reflection.ClassInfo.<clinit>(ClassInfo.java:107)
+	at org.codehaus.groovy.reflection.ReflectionCache.getCachedClass(ReflectionCache.java:95)
+	at org.codehaus.groovy.reflection.ReflectionCache.<clinit>(ReflectionCache.java:39)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.registerMethods(MetaClassRegistryImpl.java:209)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:107)
+	... 25 common frames omitted
+2022-05-23 23:46:03,240 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Import event TranslationImportRequest has received from queue
+2022-05-23 23:46:03,240 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Importer com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl@7757a37f is used to handle the event
+2022-05-23 23:46:03,240 INFO {Smartling2VcsImporterImpl.java:81} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Translation event handling starting...
+2022-05-23 23:46:04,164 INFO {SmartlingApiFacadeImpl.java:150} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] File status total=3, authorized=0, unauthorized=0, completed=3, excluded=0, countUnauthorizedStrings=false for fileUri="/github_ashok_test/main/translated/gittest_fr-FR.properties" and locale=es-US
+2022-05-23 23:46:04,349 INFO {Smartling2VcsImporterImpl.java:383} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Translated content is received for fileUri="/github_ashok_test/main/translated/gittest_fr-FR.properties", locale=es-US
+2022-05-23 23:46:04,351 ERROR {LoggingErrorHandler.java:13} [--] Could not initialize class org.codehaus.groovy.runtime.InvokerHelper
+java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.runtime.InvokerHelper
+	at groovy.lang.GroovyObjectSupport.getDefaultMetaClass(GroovyObjectSupport.java:59)
+	at groovy.lang.GroovyObjectSupport.<init>(GroovyObjectSupport.java:32)
+	at groovy.lang.Binding.<init>(Binding.java:33)
+	at groovy.lang.GroovyShell.<init>(GroovyShell.java:75)
+	at com.smartling.repoconnector.services.importer.pathevaluator.GroovyNamedGroupPathEvaluator.evaluate(GroovyNamedGroupPathEvaluator.java:97)
+	at com.smartling.repoconnector.services.importer.pathevaluator.GroovyNamedGroupPathEvaluator.evaluatePathExpression(GroovyNamedGroupPathEvaluator.java:60)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.getEvaluationResult(Smartling2VcsImporterImpl.java:384)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.mapToEvaluationResult(Smartling2VcsImporterImpl.java:289)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.pushContent(Smartling2VcsImporterImpl.java:203)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.processTranslationImportRequest(Smartling2VcsImporterImpl.java:110)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.importData(Smartling2VcsImporterImpl.java:85)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.importData(Smartling2VcsImporterImpl.java:48)
+	at com.smartling.repoconnector.services.queue.QueueImportDataListener.onMessage(QueueImportDataListener.java:70)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1189)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1179)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1076)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.reflection.ReflectionCache [in thread "org.springframework.jms.listener.DefaultMessageListenerContainer#0-1"]
+	at org.codehaus.groovy.runtime.dgmimpl.NumberNumberMetaMethod.<clinit>(NumberNumberMetaMethod.java:33)
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized0(Native Method)
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized(Unsafe.java:1160)
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.ensureClassInitialized(MethodHandleAccessorFactory.java:300)
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.newConstructorAccessor(MethodHandleAccessorFactory.java:103)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newConstructorAccessor(ReflectionFactory.java:236)
+	at java.base/java.lang.reflect.Constructor.acquireConstructorAccessor(Constructor.java:546)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:496)
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:341)
+	at java.base/java.lang.Class.newInstance(Class.java:677)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.createMetaMethodFromClass(MetaClassRegistryImpl.java:257)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:110)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:85)
+	at groovy.lang.GroovySystem.<clinit>(GroovySystem.java:36)
+	at org.codehaus.groovy.runtime.InvokerHelper.<clinit>(InvokerHelper.java:86)
+	... 22 common frames omitted
+2022-05-23 23:46:04,352 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Import event PushImportRequest has received from queue
+2022-05-23 23:46:04,352 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Importer com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl@588d630d is used to handle the event
+2022-05-23 23:46:04,353 INFO {Vcs2SmartlingImporterImpl.java:51} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Push (files to Smartling) event handling starting...
+2022-05-23 23:46:04,357 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 23:46:04,361 INFO {Vcs2SmartlingImporterImpl.java:96} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Starting processing revisions from ead3f44373ed13fdde707603e0e4cf45c1d3d605 to 8a48fe3e9a41ef8dbc2b126a4753481bd7ae02ce
+2022-05-23 23:46:04,676 INFO {Vcs2SmartlingImporterImpl.java:98} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Repository is updated to head
+2022-05-23 23:46:04,677 INFO {Vcs2SmartlingImporterImpl.java:116} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Repository resources configuration file smartling-config.json
+2022-05-23 23:46:04,678 INFO {ResourcesConfigurationImpl.java:121} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Resources configuration read from cfg/repository-data/GIT_github_com_ashokvijayendra_public_git/smartling-config.json, there are 1 sets
+2022-05-23 23:46:04,679 INFO {Vcs2SmartlingImporterImpl.java:188} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] There are 1 changes detected in repository
+2022-05-23 23:46:04,680 INFO {Vcs2SmartlingImporterImpl.java:191} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] There are 1 preprocessed resources must be uploaded to smartling
+2022-05-23 23:46:04,680 INFO {Vcs2SmartlingImporterImpl.java:193} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] There are 1 resources must be uploaded to smartling
+2022-05-23 23:46:04,692 INFO {SmartlingApiFacadeImpl.java:271} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Resource /github_ashok_test/main/gittest.properties, type JAVA_PROPERTIES, authorized true, callback null is uploading to smartling...
+2022-05-23 23:46:05,205 INFO {SmartlingApiFacadeImpl.java:294} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Resource /github_ashok_test/main/gittest.properties is uploaded successfully
+2022-05-23 23:46:05,208 INFO {Vcs2SmartlingImporterImpl.java:171} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Revisions from ead3f44373ed13fdde707603e0e4cf45c1d3d605 to 8a48fe3e9a41ef8dbc2b126a4753481bd7ae02ce was processed successfully
+2022-05-23 23:46:05,208 INFO {Vcs2SmartlingImporterImpl.java:85} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Push event handling is finished successfully
+2022-05-23 23:46:05,210 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Import event is processed successfully. Result [com.smartling.repoconnector.model.ImportResult@738f8eb0[OK,/github_ashok_test/main/gittest.properties,f08ee008d,<null>,IN_PROGRESS]]
+2022-05-23 23:49:00,005 INFO {TranslationStatusChecker.java:82} [--] Check translations task is starting...
+2022-05-23 23:49:00,751 INFO {TranslationStatusChecker.java:146} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Scheduler creates an import request for [/github_ashok_test/main/gittest.properties, /github_ashok_test/main/translated/gittest_fr-FR.properties]
+2022-05-23 23:49:00,798 INFO {TranslationStatusChecker.java:94} [--] Check translations task is completed
+2022-05-23 23:49:02,007 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event PollImportRequest has received from queue
+2022-05-23 23:49:02,025 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Importer com.smartling.repoconnector.services.scheduler.RepositoryPollingImporterImpl@16029e2f is used to handle the event
+2022-05-23 23:49:02,025 INFO {RepositoryPollingImporterImpl.java:47} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is starting...
+2022-05-23 23:49:02,250 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 23:49:02,258 INFO {RepositoryPollingImporterImpl.java:87} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is finished
+2022-05-23 23:49:02,258 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 23:49:02,259 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Import event TranslationImportRequest has received from queue
+2022-05-23 23:49:02,259 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Importer com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl@7757a37f is used to handle the event
+2022-05-23 23:49:02,259 INFO {Smartling2VcsImporterImpl.java:81} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Translation event handling starting...
+2022-05-23 23:49:02,898 INFO {SmartlingApiFacadeImpl.java:150} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] File status total=7, authorized=0, unauthorized=0, completed=7, excluded=0, countUnauthorizedStrings=false for fileUri="/github_ashok_test/main/gittest.properties" and locale=es-US
+2022-05-23 23:49:03,103 INFO {Smartling2VcsImporterImpl.java:383} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Translated content is received for fileUri="/github_ashok_test/main/gittest.properties", locale=es-US
+2022-05-23 23:49:03,105 ERROR {LoggingErrorHandler.java:13} [--] Could not initialize class org.codehaus.groovy.runtime.InvokerHelper
+java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.runtime.InvokerHelper
+	at groovy.lang.GroovyObjectSupport.getDefaultMetaClass(GroovyObjectSupport.java:59)
+	at groovy.lang.GroovyObjectSupport.<init>(GroovyObjectSupport.java:32)
+	at groovy.lang.Binding.<init>(Binding.java:33)
+	at groovy.lang.GroovyShell.<init>(GroovyShell.java:75)
+	at com.smartling.repoconnector.services.importer.pathevaluator.GroovyNamedGroupPathEvaluator.evaluate(GroovyNamedGroupPathEvaluator.java:97)
+	at com.smartling.repoconnector.services.importer.pathevaluator.GroovyNamedGroupPathEvaluator.evaluatePathExpression(GroovyNamedGroupPathEvaluator.java:60)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.getEvaluationResult(Smartling2VcsImporterImpl.java:384)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.mapToEvaluationResult(Smartling2VcsImporterImpl.java:289)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.pushContent(Smartling2VcsImporterImpl.java:203)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.processTranslationImportRequest(Smartling2VcsImporterImpl.java:110)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.importData(Smartling2VcsImporterImpl.java:85)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.importData(Smartling2VcsImporterImpl.java:48)
+	at com.smartling.repoconnector.services.queue.QueueImportDataListener.onMessage(QueueImportDataListener.java:70)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1189)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1179)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1076)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.reflection.ReflectionCache [in thread "org.springframework.jms.listener.DefaultMessageListenerContainer#0-1"]
+	at org.codehaus.groovy.runtime.dgmimpl.NumberNumberMetaMethod.<clinit>(NumberNumberMetaMethod.java:33)
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized0(Native Method)
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized(Unsafe.java:1160)
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.ensureClassInitialized(MethodHandleAccessorFactory.java:300)
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.newConstructorAccessor(MethodHandleAccessorFactory.java:103)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newConstructorAccessor(ReflectionFactory.java:236)
+	at java.base/java.lang.reflect.Constructor.acquireConstructorAccessor(Constructor.java:546)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:496)
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:341)
+	at java.base/java.lang.Class.newInstance(Class.java:677)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.createMetaMethodFromClass(MetaClassRegistryImpl.java:257)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:110)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:85)
+	at groovy.lang.GroovySystem.<clinit>(GroovySystem.java:36)
+	at org.codehaus.groovy.runtime.InvokerHelper.<clinit>(InvokerHelper.java:86)
+	... 22 common frames omitted
+2022-05-23 23:49:03,107 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Import event TranslationImportRequest has received from queue
+2022-05-23 23:49:03,107 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Importer com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl@7757a37f is used to handle the event
+2022-05-23 23:49:03,107 INFO {Smartling2VcsImporterImpl.java:81} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Translation event handling starting...
+2022-05-23 23:49:03,822 INFO {SmartlingApiFacadeImpl.java:150} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] File status total=3, authorized=0, unauthorized=0, completed=3, excluded=0, countUnauthorizedStrings=false for fileUri="/github_ashok_test/main/translated/gittest_fr-FR.properties" and locale=es-US
+2022-05-23 23:49:03,972 INFO {Smartling2VcsImporterImpl.java:383} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Translated content is received for fileUri="/github_ashok_test/main/translated/gittest_fr-FR.properties", locale=es-US
+2022-05-23 23:49:03,973 ERROR {LoggingErrorHandler.java:13} [--] Could not initialize class org.codehaus.groovy.runtime.InvokerHelper
+java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.runtime.InvokerHelper
+	at groovy.lang.GroovyObjectSupport.getDefaultMetaClass(GroovyObjectSupport.java:59)
+	at groovy.lang.GroovyObjectSupport.<init>(GroovyObjectSupport.java:32)
+	at groovy.lang.Binding.<init>(Binding.java:33)
+	at groovy.lang.GroovyShell.<init>(GroovyShell.java:75)
+	at com.smartling.repoconnector.services.importer.pathevaluator.GroovyNamedGroupPathEvaluator.evaluate(GroovyNamedGroupPathEvaluator.java:97)
+	at com.smartling.repoconnector.services.importer.pathevaluator.GroovyNamedGroupPathEvaluator.evaluatePathExpression(GroovyNamedGroupPathEvaluator.java:60)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.getEvaluationResult(Smartling2VcsImporterImpl.java:384)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.mapToEvaluationResult(Smartling2VcsImporterImpl.java:289)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.pushContent(Smartling2VcsImporterImpl.java:203)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.processTranslationImportRequest(Smartling2VcsImporterImpl.java:110)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.importData(Smartling2VcsImporterImpl.java:85)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.importData(Smartling2VcsImporterImpl.java:48)
+	at com.smartling.repoconnector.services.queue.QueueImportDataListener.onMessage(QueueImportDataListener.java:70)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1189)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1179)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1076)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.reflection.ReflectionCache [in thread "org.springframework.jms.listener.DefaultMessageListenerContainer#0-1"]
+	at org.codehaus.groovy.runtime.dgmimpl.NumberNumberMetaMethod.<clinit>(NumberNumberMetaMethod.java:33)
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized0(Native Method)
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized(Unsafe.java:1160)
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.ensureClassInitialized(MethodHandleAccessorFactory.java:300)
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.newConstructorAccessor(MethodHandleAccessorFactory.java:103)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newConstructorAccessor(ReflectionFactory.java:236)
+	at java.base/java.lang.reflect.Constructor.acquireConstructorAccessor(Constructor.java:546)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:496)
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:341)
+	at java.base/java.lang.Class.newInstance(Class.java:677)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.createMetaMethodFromClass(MetaClassRegistryImpl.java:257)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:110)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:85)
+	at groovy.lang.GroovySystem.<clinit>(GroovySystem.java:36)
+	at org.codehaus.groovy.runtime.InvokerHelper.<clinit>(InvokerHelper.java:86)
+	... 22 common frames omitted
+2022-05-23 23:49:52,043 INFO {RepoConnector.java:174} [--] Repository Connector Stopped
+2022-05-23 23:49:52,044 INFO {BrokerManager.java:141} [--] Repository Connector is stopping
+2022-05-23 23:50:15,324 INFO {RepoConnector.java:87} [--] Repo connector version is 1.7.10
+2022-05-23 23:50:15,327 INFO {RepoConnector.java:89} [--] Configuration is cfg
+2022-05-23 23:50:17,331 INFO {RepositoryFactoryImpl.java:55} [--] Repository factory configuration are reading...
+2022-05-23 23:50:17,332 INFO {RepositoryFactoryImpl.java:61} [--] Repository factory configuration are read successfully. There are 6 specific connectors
+2022-05-23 23:50:17,342 INFO {ConfigRepositoryDataProviderImpl.java:86} [--] Repository configurations are reading...
+2022-05-23 23:50:17,368 INFO {ConfigRepositoryDataProviderImpl.java:127} [--] Repository RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>] are added, alias github_ashok_test, project f08ee008d, auth type USER_PASSWORD
+2022-05-23 23:50:17,375 INFO {ConfigRepositoryDataProviderImpl.java:129} [--] Repository configurations are read successfully. There are 1 repositories
+2022-05-23 23:50:18,304 INFO {QueueImportDataListener.java:49} [--] Importer com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl@3bab95ca is assigned to handle TranslationImportRequest data
+2022-05-23 23:50:18,304 INFO {QueueImportDataListener.java:49} [--] Importer com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl@5342eec5 is assigned to handle PushImportRequest data
+2022-05-23 23:50:18,304 INFO {QueueImportDataListener.java:49} [--] Importer com.smartling.repoconnector.services.scheduler.RepositoryPollingImporterImpl@1a139347 is assigned to handle PollImportRequest data
+2022-05-23 23:50:18,395 INFO {BrokerManager.java:128} [--] Repository Connector is starting
+2022-05-23 23:50:18,396 INFO {ActiveMQProvider.java:45} [--] Queue is started
+2022-05-23 23:50:18,866 INFO {HTTPSJerseyListener.java:68} [--] HTTP listener is started on http://0.0.0.0:5555
+2022-05-23 23:50:18,877 INFO {BrokerManager.java:134} [--] Metrics reposter is started. Output dir: cfg/metrics
+2022-05-23 23:50:18,877 INFO {BrokerManager.java:136} [--] Repository Connector successfully started
+2022-05-23 23:50:18,877 INFO {RepoConnector.java:213} [--] Repository Connector is starting
+2022-05-23 23:50:18,878 INFO {RepoConnector.java:214} [--] Checking health...
+2022-05-23 23:50:18,878 INFO {RepoConnector.java:311} [--] ActiveMQProvider is OK, parameters {handledConnections=0, connections=0, uptime=1.381 seconds}
+2022-05-23 23:50:18,879 INFO {RepoConnector.java:311} [--] HTTPSJerseyListener is OK
+2022-05-23 23:50:20,023 INFO {GitRepositoryConnector.java:442} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-] Repository is accessible
+2022-05-23 23:50:20,023 INFO {RepoConnector.java:311} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-] Repository RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>] is OK
+2022-05-23 23:50:20,024 INFO {RepoConnector.java:223} [--] The health is OK
+2022-05-23 23:50:20,026 INFO {RepositoryFactoryImpl.java:177} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-VCS2SMARTLING] Pooling task is scheduled with cron expression 0 */1 * * * ?
+2022-05-23 23:50:20,027 INFO {RepoConnector.java:225} [--] Periodical tasks are scheduled
+2022-05-23 23:51:00,003 INFO {TranslationStatusChecker.java:82} [--] Check translations task is starting...
+2022-05-23 23:51:00,799 INFO {TranslationStatusChecker.java:146} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Scheduler creates an import request for [/github_ashok_test/main/gittest.properties, /github_ashok_test/main/translated/gittest_fr-FR.properties]
+2022-05-23 23:51:00,852 INFO {TranslationStatusChecker.java:94} [--] Check translations task is completed
+2022-05-23 23:51:02,008 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event PollImportRequest has received from queue
+2022-05-23 23:51:02,027 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Importer com.smartling.repoconnector.services.scheduler.RepositoryPollingImporterImpl@1a139347 is used to handle the event
+2022-05-23 23:51:02,028 INFO {RepositoryPollingImporterImpl.java:47} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is starting...
+2022-05-23 23:51:02,308 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 23:51:02,339 INFO {RepositoryPollingImporterImpl.java:73} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Scheduler creates an import request for main branch and 8eeb4b41f8b7c8f927aedf655e64d9d0a9132965 revision
+2022-05-23 23:51:02,362 INFO {RepositoryPollingImporterImpl.java:87} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is finished
+2022-05-23 23:51:02,363 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 23:51:02,365 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Import event TranslationImportRequest has received from queue
+2022-05-23 23:51:02,365 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Importer com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl@3bab95ca is used to handle the event
+2022-05-23 23:51:02,365 INFO {Smartling2VcsImporterImpl.java:81} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Translation event handling starting...
+2022-05-23 23:51:03,077 INFO {SmartlingApiFacadeImpl.java:150} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] File status total=7, authorized=0, unauthorized=0, completed=7, excluded=0, countUnauthorizedStrings=false for fileUri="/github_ashok_test/main/gittest.properties" and locale=es-US
+2022-05-23 23:51:03,352 INFO {Smartling2VcsImporterImpl.java:383} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Translated content is received for fileUri="/github_ashok_test/main/gittest.properties", locale=es-US
+2022-05-23 23:51:03,434 ERROR {LoggingErrorHandler.java:13} [--] Could not initialize class org.codehaus.groovy.reflection.ReflectionCache
+java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.reflection.ReflectionCache
+	at org.codehaus.groovy.runtime.dgmimpl.NumberNumberMetaMethod.<clinit>(NumberNumberMetaMethod.java:33)
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized0(Native Method)
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized(Unsafe.java:1160)
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.ensureClassInitialized(MethodHandleAccessorFactory.java:300)
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.newConstructorAccessor(MethodHandleAccessorFactory.java:103)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newConstructorAccessor(ReflectionFactory.java:236)
+	at java.base/java.lang.reflect.Constructor.acquireConstructorAccessor(Constructor.java:546)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:496)
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:341)
+	at java.base/java.lang.Class.newInstance(Class.java:677)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.createMetaMethodFromClass(MetaClassRegistryImpl.java:257)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:110)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:85)
+	at groovy.lang.GroovySystem.<clinit>(GroovySystem.java:36)
+	at org.codehaus.groovy.runtime.InvokerHelper.<clinit>(InvokerHelper.java:86)
+	at groovy.lang.GroovyObjectSupport.getDefaultMetaClass(GroovyObjectSupport.java:59)
+	at groovy.lang.GroovyObjectSupport.<init>(GroovyObjectSupport.java:32)
+	at groovy.lang.Binding.<init>(Binding.java:33)
+	at groovy.lang.GroovyShell.<init>(GroovyShell.java:75)
+	at com.smartling.repoconnector.services.importer.pathevaluator.GroovyNamedGroupPathEvaluator.evaluate(GroovyNamedGroupPathEvaluator.java:97)
+	at com.smartling.repoconnector.services.importer.pathevaluator.GroovyNamedGroupPathEvaluator.evaluatePathExpression(GroovyNamedGroupPathEvaluator.java:60)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.getEvaluationResult(Smartling2VcsImporterImpl.java:384)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.mapToEvaluationResult(Smartling2VcsImporterImpl.java:289)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.pushContent(Smartling2VcsImporterImpl.java:203)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.processTranslationImportRequest(Smartling2VcsImporterImpl.java:110)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.importData(Smartling2VcsImporterImpl.java:85)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.importData(Smartling2VcsImporterImpl.java:48)
+	at com.smartling.repoconnector.services.queue.QueueImportDataListener.onMessage(QueueImportDataListener.java:70)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1189)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1179)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1076)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.vmplugin.v7.Java7 [in thread "org.springframework.jms.listener.DefaultMessageListenerContainer#0-1"]
+	at org.codehaus.groovy.vmplugin.VMPluginFactory.<clinit>(VMPluginFactory.java:43)
+	at org.codehaus.groovy.reflection.GroovyClassValueFactory.<clinit>(GroovyClassValueFactory.java:35)
+	at org.codehaus.groovy.reflection.ClassInfo.<clinit>(ClassInfo.java:107)
+	at org.codehaus.groovy.reflection.ReflectionCache.getCachedClass(ReflectionCache.java:95)
+	at org.codehaus.groovy.reflection.ReflectionCache.<clinit>(ReflectionCache.java:39)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.registerMethods(MetaClassRegistryImpl.java:209)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:107)
+	... 25 common frames omitted
+2022-05-23 23:51:03,436 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Import event TranslationImportRequest has received from queue
+2022-05-23 23:51:03,436 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Importer com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl@3bab95ca is used to handle the event
+2022-05-23 23:51:03,436 INFO {Smartling2VcsImporterImpl.java:81} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Translation event handling starting...
+2022-05-23 23:51:04,331 INFO {SmartlingApiFacadeImpl.java:150} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] File status total=3, authorized=0, unauthorized=0, completed=3, excluded=0, countUnauthorizedStrings=false for fileUri="/github_ashok_test/main/translated/gittest_fr-FR.properties" and locale=es-US
+2022-05-23 23:51:04,592 INFO {Smartling2VcsImporterImpl.java:383} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Translated content is received for fileUri="/github_ashok_test/main/translated/gittest_fr-FR.properties", locale=es-US
+2022-05-23 23:51:04,593 ERROR {LoggingErrorHandler.java:13} [--] Could not initialize class org.codehaus.groovy.runtime.InvokerHelper
+java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.runtime.InvokerHelper
+	at groovy.lang.GroovyObjectSupport.getDefaultMetaClass(GroovyObjectSupport.java:59)
+	at groovy.lang.GroovyObjectSupport.<init>(GroovyObjectSupport.java:32)
+	at groovy.lang.Binding.<init>(Binding.java:33)
+	at groovy.lang.GroovyShell.<init>(GroovyShell.java:75)
+	at com.smartling.repoconnector.services.importer.pathevaluator.GroovyNamedGroupPathEvaluator.evaluate(GroovyNamedGroupPathEvaluator.java:97)
+	at com.smartling.repoconnector.services.importer.pathevaluator.GroovyNamedGroupPathEvaluator.evaluatePathExpression(GroovyNamedGroupPathEvaluator.java:60)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.getEvaluationResult(Smartling2VcsImporterImpl.java:384)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.mapToEvaluationResult(Smartling2VcsImporterImpl.java:289)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.pushContent(Smartling2VcsImporterImpl.java:203)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.processTranslationImportRequest(Smartling2VcsImporterImpl.java:110)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.importData(Smartling2VcsImporterImpl.java:85)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.importData(Smartling2VcsImporterImpl.java:48)
+	at com.smartling.repoconnector.services.queue.QueueImportDataListener.onMessage(QueueImportDataListener.java:70)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1189)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1179)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1076)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.reflection.ReflectionCache [in thread "org.springframework.jms.listener.DefaultMessageListenerContainer#0-1"]
+	at org.codehaus.groovy.runtime.dgmimpl.NumberNumberMetaMethod.<clinit>(NumberNumberMetaMethod.java:33)
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized0(Native Method)
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized(Unsafe.java:1160)
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.ensureClassInitialized(MethodHandleAccessorFactory.java:300)
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.newConstructorAccessor(MethodHandleAccessorFactory.java:103)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newConstructorAccessor(ReflectionFactory.java:236)
+	at java.base/java.lang.reflect.Constructor.acquireConstructorAccessor(Constructor.java:546)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:496)
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:341)
+	at java.base/java.lang.Class.newInstance(Class.java:677)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.createMetaMethodFromClass(MetaClassRegistryImpl.java:257)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:110)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:85)
+	at groovy.lang.GroovySystem.<clinit>(GroovySystem.java:36)
+	at org.codehaus.groovy.runtime.InvokerHelper.<clinit>(InvokerHelper.java:86)
+	... 22 common frames omitted
+2022-05-23 23:51:04,594 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Import event PushImportRequest has received from queue
+2022-05-23 23:51:04,594 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Importer com.smartling.repoconnector.services.importer.Vcs2SmartlingImporterImpl@5342eec5 is used to handle the event
+2022-05-23 23:51:04,595 INFO {Vcs2SmartlingImporterImpl.java:51} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Push (files to Smartling) event handling starting...
+2022-05-23 23:51:04,600 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 23:51:04,624 INFO {Vcs2SmartlingImporterImpl.java:96} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Starting processing revisions from 8a48fe3e9a41ef8dbc2b126a4753481bd7ae02ce to 8eeb4b41f8b7c8f927aedf655e64d9d0a9132965
+2022-05-23 23:51:05,009 INFO {Vcs2SmartlingImporterImpl.java:98} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Repository is updated to head
+2022-05-23 23:51:05,010 INFO {Vcs2SmartlingImporterImpl.java:116} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Repository resources configuration file smartling-config.json
+2022-05-23 23:51:05,013 INFO {ResourcesConfigurationImpl.java:121} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Resources configuration read from cfg/repository-data/GIT_github_com_ashokvijayendra_public_git/smartling-config.json, there are 1 sets
+2022-05-23 23:51:05,026 INFO {Vcs2SmartlingImporterImpl.java:188} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] There are 1 changes detected in repository
+2022-05-23 23:51:05,027 INFO {Vcs2SmartlingImporterImpl.java:191} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] There are 1 preprocessed resources must be uploaded to smartling
+2022-05-23 23:51:05,027 INFO {Vcs2SmartlingImporterImpl.java:193} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] There are 1 resources must be uploaded to smartling
+2022-05-23 23:51:05,045 INFO {SmartlingApiFacadeImpl.java:247} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Resource /github_ashok_test/main/translated/gittest_fr-FR.properties is deleting from smartling...
+2022-05-23 23:51:05,485 INFO {SmartlingApiFacadeImpl.java:250} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Resource /github_ashok_test/main/translated/gittest_fr-FR.properties is deleted successfully
+2022-05-23 23:51:05,490 INFO {Vcs2SmartlingImporterImpl.java:171} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Revisions from 8a48fe3e9a41ef8dbc2b126a4753481bd7ae02ce to 8eeb4b41f8b7c8f927aedf655e64d9d0a9132965 was processed successfully
+2022-05-23 23:51:05,491 INFO {Vcs2SmartlingImporterImpl.java:85} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Push event handling is finished successfully
+2022-05-23 23:51:05,492 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-VCS2SMARTLING] Import event is processed successfully. Result [com.smartling.repoconnector.model.ImportResult@39a35da6[OK,<null>,f08ee008d,<null>,DELETED]]
+2022-05-23 23:54:00,001 INFO {TranslationStatusChecker.java:82} [--] Check translations task is starting...
+2022-05-23 23:54:00,433 INFO {TranslationStatusChecker.java:146} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Scheduler creates an import request for [/github_ashok_test/main/gittest.properties]
+2022-05-23 23:54:00,457 INFO {TranslationStatusChecker.java:94} [--] Check translations task is completed
+2022-05-23 23:54:02,004 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event PollImportRequest has received from queue
+2022-05-23 23:54:02,021 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Importer com.smartling.repoconnector.services.scheduler.RepositoryPollingImporterImpl@1a139347 is used to handle the event
+2022-05-23 23:54:02,022 INFO {RepositoryPollingImporterImpl.java:47} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is starting...
+2022-05-23 23:54:02,254 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 23:54:02,260 INFO {RepositoryPollingImporterImpl.java:87} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is finished
+2022-05-23 23:54:02,261 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 23:54:02,262 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Import event TranslationImportRequest has received from queue
+2022-05-23 23:54:02,262 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Importer com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl@3bab95ca is used to handle the event
+2022-05-23 23:54:02,262 INFO {Smartling2VcsImporterImpl.java:81} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Translation event handling starting...
+2022-05-23 23:54:03,116 INFO {SmartlingApiFacadeImpl.java:150} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] File status total=7, authorized=0, unauthorized=0, completed=7, excluded=0, countUnauthorizedStrings=false for fileUri="/github_ashok_test/main/gittest.properties" and locale=es-US
+2022-05-23 23:54:03,268 INFO {Smartling2VcsImporterImpl.java:383} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Translated content is received for fileUri="/github_ashok_test/main/gittest.properties", locale=es-US
+2022-05-23 23:54:03,270 ERROR {LoggingErrorHandler.java:13} [--] Could not initialize class org.codehaus.groovy.runtime.InvokerHelper
+java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.runtime.InvokerHelper
+	at groovy.lang.GroovyObjectSupport.getDefaultMetaClass(GroovyObjectSupport.java:59)
+	at groovy.lang.GroovyObjectSupport.<init>(GroovyObjectSupport.java:32)
+	at groovy.lang.Binding.<init>(Binding.java:33)
+	at groovy.lang.GroovyShell.<init>(GroovyShell.java:75)
+	at com.smartling.repoconnector.services.importer.pathevaluator.GroovyNamedGroupPathEvaluator.evaluate(GroovyNamedGroupPathEvaluator.java:97)
+	at com.smartling.repoconnector.services.importer.pathevaluator.GroovyNamedGroupPathEvaluator.evaluatePathExpression(GroovyNamedGroupPathEvaluator.java:60)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.getEvaluationResult(Smartling2VcsImporterImpl.java:384)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.mapToEvaluationResult(Smartling2VcsImporterImpl.java:289)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.pushContent(Smartling2VcsImporterImpl.java:203)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.processTranslationImportRequest(Smartling2VcsImporterImpl.java:110)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.importData(Smartling2VcsImporterImpl.java:85)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.importData(Smartling2VcsImporterImpl.java:48)
+	at com.smartling.repoconnector.services.queue.QueueImportDataListener.onMessage(QueueImportDataListener.java:70)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1189)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1179)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1076)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.reflection.ReflectionCache [in thread "org.springframework.jms.listener.DefaultMessageListenerContainer#0-1"]
+	at org.codehaus.groovy.runtime.dgmimpl.NumberNumberMetaMethod.<clinit>(NumberNumberMetaMethod.java:33)
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized0(Native Method)
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized(Unsafe.java:1160)
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.ensureClassInitialized(MethodHandleAccessorFactory.java:300)
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.newConstructorAccessor(MethodHandleAccessorFactory.java:103)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newConstructorAccessor(ReflectionFactory.java:236)
+	at java.base/java.lang.reflect.Constructor.acquireConstructorAccessor(Constructor.java:546)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:496)
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:341)
+	at java.base/java.lang.Class.newInstance(Class.java:677)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.createMetaMethodFromClass(MetaClassRegistryImpl.java:257)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:110)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:85)
+	at groovy.lang.GroovySystem.<clinit>(GroovySystem.java:36)
+	at org.codehaus.groovy.runtime.InvokerHelper.<clinit>(InvokerHelper.java:86)
+	... 22 common frames omitted
+2022-05-23 23:57:00,005 INFO {TranslationStatusChecker.java:82} [--] Check translations task is starting...
+2022-05-23 23:57:00,591 INFO {TranslationStatusChecker.java:146} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Scheduler creates an import request for [/github_ashok_test/main/gittest.properties]
+2022-05-23 23:57:00,614 INFO {TranslationStatusChecker.java:94} [--] Check translations task is completed
+2022-05-23 23:57:02,008 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event PollImportRequest has received from queue
+2022-05-23 23:57:02,008 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Importer com.smartling.repoconnector.services.scheduler.RepositoryPollingImporterImpl@1a139347 is used to handle the event
+2022-05-23 23:57:02,030 INFO {RepositoryPollingImporterImpl.java:47} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is starting...
+2022-05-23 23:57:02,259 INFO {GitRepositoryConnector.java:542} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Repository is opened from localPath="cfg/repository-data/GIT_github_com_ashokvijayendra_public_git"
+2022-05-23 23:57:02,269 INFO {RepositoryPollingImporterImpl.java:87} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Check repository task is finished
+2022-05-23 23:57:02,270 INFO {QueueImportDataListener.java:72} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=<null>]-POLL_VCS2SMARTLING] Import event is processed successfully. Result []
+2022-05-23 23:57:02,271 INFO {QueueImportDataListener.java:66} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Import event TranslationImportRequest has received from queue
+2022-05-23 23:57:02,272 INFO {QueueImportDataListener.java:69} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Importer com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl@3bab95ca is used to handle the event
+2022-05-23 23:57:02,272 INFO {Smartling2VcsImporterImpl.java:81} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Translation event handling starting...
+2022-05-23 23:57:02,906 INFO {SmartlingApiFacadeImpl.java:150} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] File status total=7, authorized=0, unauthorized=0, completed=7, excluded=0, countUnauthorizedStrings=false for fileUri="/github_ashok_test/main/gittest.properties" and locale=es-US
+2022-05-23 23:57:03,038 INFO {Smartling2VcsImporterImpl.java:383} [f08ee008d-RepositoryKey[type=GIT,protocol=HTTPS,host=github.com,path=ashokvijayendra/public.git,branch=main]-SMARTLING2VCS] Translated content is received for fileUri="/github_ashok_test/main/gittest.properties", locale=es-US
+2022-05-23 23:57:03,039 ERROR {LoggingErrorHandler.java:13} [--] Could not initialize class org.codehaus.groovy.runtime.InvokerHelper
+java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.runtime.InvokerHelper
+	at groovy.lang.GroovyObjectSupport.getDefaultMetaClass(GroovyObjectSupport.java:59)
+	at groovy.lang.GroovyObjectSupport.<init>(GroovyObjectSupport.java:32)
+	at groovy.lang.Binding.<init>(Binding.java:33)
+	at groovy.lang.GroovyShell.<init>(GroovyShell.java:75)
+	at com.smartling.repoconnector.services.importer.pathevaluator.GroovyNamedGroupPathEvaluator.evaluate(GroovyNamedGroupPathEvaluator.java:97)
+	at com.smartling.repoconnector.services.importer.pathevaluator.GroovyNamedGroupPathEvaluator.evaluatePathExpression(GroovyNamedGroupPathEvaluator.java:60)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.getEvaluationResult(Smartling2VcsImporterImpl.java:384)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.mapToEvaluationResult(Smartling2VcsImporterImpl.java:289)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.pushContent(Smartling2VcsImporterImpl.java:203)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.processTranslationImportRequest(Smartling2VcsImporterImpl.java:110)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.importData(Smartling2VcsImporterImpl.java:85)
+	at com.smartling.repoconnector.services.importer.Smartling2VcsImporterImpl.importData(Smartling2VcsImporterImpl.java:48)
+	at com.smartling.repoconnector.services.queue.QueueImportDataListener.onMessage(QueueImportDataListener.java:70)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:761)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:699)
+	at org.springframework.jms.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:674)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.doReceiveAndExecute(AbstractPollingMessageListenerContainer.java:318)
+	at org.springframework.jms.listener.AbstractPollingMessageListenerContainer.receiveAndExecute(AbstractPollingMessageListenerContainer.java:257)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.invokeListener(DefaultMessageListenerContainer.java:1189)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.executeOngoingLoop(DefaultMessageListenerContainer.java:1179)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1076)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+Caused by: java.lang.ExceptionInInitializerError: Exception java.lang.NoClassDefFoundError: Could not initialize class org.codehaus.groovy.reflection.ReflectionCache [in thread "org.springframework.jms.listener.DefaultMessageListenerContainer#0-1"]
+	at org.codehaus.groovy.runtime.dgmimpl.NumberNumberMetaMethod.<clinit>(NumberNumberMetaMethod.java:33)
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized0(Native Method)
+	at java.base/jdk.internal.misc.Unsafe.ensureClassInitialized(Unsafe.java:1160)
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.ensureClassInitialized(MethodHandleAccessorFactory.java:300)
+	at java.base/jdk.internal.reflect.MethodHandleAccessorFactory.newConstructorAccessor(MethodHandleAccessorFactory.java:103)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newConstructorAccessor(ReflectionFactory.java:236)
+	at java.base/java.lang.reflect.Constructor.acquireConstructorAccessor(Constructor.java:546)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:496)
+	at java.base/java.lang.reflect.ReflectAccess.newInstance(ReflectAccess.java:128)
+	at java.base/jdk.internal.reflect.ReflectionFactory.newInstance(ReflectionFactory.java:341)
+	at java.base/java.lang.Class.newInstance(Class.java:677)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.createMetaMethodFromClass(MetaClassRegistryImpl.java:257)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:110)
+	at org.codehaus.groovy.runtime.metaclass.MetaClassRegistryImpl.<init>(MetaClassRegistryImpl.java:85)
+	at groovy.lang.GroovySystem.<clinit>(GroovySystem.java:36)
+	at org.codehaus.groovy.runtime.InvokerHelper.<clinit>(InvokerHelper.java:86)
+	... 22 common frames omitted
+2022-05-23 23:57:40,059 INFO {RepoConnector.java:174} [--] Repository Connector Stopped
+2022-05-23 23:57:40,060 INFO {BrokerManager.java:141} [--] Repository Connector is stopping
